@@ -1,0 +1,397 @@
+:root{
+  --main-color: #454a44;
+  --secundary-color: #616660;
+  --alt-color: #79897f;
+  --background-color: #f4f6f3;
+}
+
+html{
+  box-sizing: border-box;
+}
+
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+body{
+  font-family: 'Reem Kufi Fun', sans-serif;
+
+}
+
+h1{
+  color: black;
+  font-size: 78px;
+  font-weight: 400;
+  letter-spacing: 10px;
+  }
+
+  @media(max-width: 480px){
+    h1{
+      font-size: 50px;
+      }
+  }
+/* seccion header */
+header{
+  margin: 20px;
+  width: calc(100% - 40px);
+  height: calc(100vh - 40px);
+  background-image: url("https://admincontent.bimobject.com/public/topbanner/805c168b-ea2e-4e37-8721-0457acf14e2f?ver=1654865658");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+@media(max-width: 480px){
+  header{
+    margin: 10px;
+    width: calc(100% - 20px);
+    height: calc(100vh - 20px);
+    background-image: url("https://admincontent.bimobject.com/public/topbanner/805c168b-ea2e-4e37-8721-0457acf14e2f?ver=1654865658");
+    background-position: center bottom;
+  }
+}
+
+.header-content{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header p{
+  color: black;
+  font-size: 24px ;
+}
+
+.underline, .underline-lastest {
+  width: 10%;
+  height: 5px;
+  background-color: var(--alt-color);
+}
+
+header nav a{
+  text-decoration: none;
+  color: var(--secundary-color);
+}
+
+.desktop-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px 0 40px;
+}
+
+@media (max-width: 480px) {
+  .desktop-menu {
+    display: none;
+  }
+}
+
+.mobile-menu{
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .mobile-menu {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+}
+
+.nav-small{
+  font-size: 10px;
+}
+
+.nav-small a{
+  margin-left: 15px;
+}
+
+.btn{
+  border: 2px solid black;
+  padding: 5px 10px;
+}
+
+.btn:hover{
+background-color: var(--secundary-color);
+color: white;
+}
+
+/* seccion articulos*/
+main{
+  background-color: var(--background-color);
+  padding: 120px 0;
+}
+
+main div:first-child{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lastest-articles{
+  font-size: 40px;
+  letter-spacing: 5px;
+  color: var(--secundary-color);
+}
+
+@media (max-width: 480px) {
+  .lastest-articles{
+    font-size: 25px;
+    letter-spacing: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .underline-lastest{
+    width: 30%;
+    height: 5px;
+    background-color: var(--alt-color);
+  }
+}
+
+.underline-cards{
+  width: 15%;
+  height: 5px;
+  background-color: var(--alt-color);
+}
+
+@media (max-width: 480px) {
+  .underline-cards{
+    width: 15%;
+    height: 5px;
+    background-color: var(--alt-color);
+  }
+}
+
+article{
+  width: 100%;
+  height: 500px;
+  background-color: white;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+
+
+.article-image{
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+}
+.article-image img{
+  width: 200%;
+}
+.article-content{
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center; 
+}
+
+.cards-container{
+  display: flex;
+  gap: 15px;
+  width: 70%;
+  margin: 40px auto 0 auto;
+}
+
+@media (max-width: 480px) {
+  .cards-container{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: calc(100% - 20px);
+    
+
+  }
+}
+.about-section{
+  display: flex;
+}
+
+.about-section > div{
+  width: 50%;
+}
+
+@media (max-width: 480px) {
+  .about-section > div{
+    width: 100%;
+    margin: auto;
+  }
+}
+
+  @media (max-width: 480px) {
+    .about-section{
+     display: flex;
+     flex-direction: column;
+  }
+}
+
+.about-image{
+  background-image: url("https://images.squarespace-cdn.com/content/v1/520bc04fe4b03863c7f8a659/1505965654689-F8EUX5I1PDVT66SJ0UU8/spiritual+gifts.jpg?format=2500w");
+  background-size: cover;
+  background-position: center bottom;
+}
+
+@media (max-width: 480px) {
+  .about-image{
+    background-image: url("https://images.squarespace-cdn.com/content/v1/520bc04fe4b03863c7f8a659/1505965654689-F8EUX5I1PDVT66SJ0UU8/spiritual+gifts.jpg?format=2500w");
+    width: 300%;
+    height: 30vh;
+  }
+}
+
+.about-content{
+  padding: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: justify;
+}
+
+@media (max-width: 480px) {
+  .about-content{
+    padding: 10px;
+    text-align: justify;
+    margin: auto;
+  }
+}
+
+.form-email{
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: #e1e6e0;
+}
+
+.subscribe{
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  .subscribe{
+    font-size: 40px;
+  }
+}
+
+.sing{
+  padding: 0;
+  margin-top: 5px;
+}
+
+@media (max-width: 480px) {
+  .sing{
+    font-size: 25px;
+  }
+}
+
+input{
+  width: 30%;
+  height: 60px;
+  opacity: 0.5;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+  input{
+    width: 90%;
+  }
+}
+
+.btn-submit{
+  border: 2px solid var(--secundary-color);
+  padding: 5px 10px;
+  width: 150px;
+  height: 50px;
+}
+
+@media (max-width: 480px) {
+  .btn-submit{
+    width: 90%;
+    height: 50px;
+  }
+}
+
+.btn-submit:hover{
+  background-color: var(--secundary-color);
+  color: white;
+  }
+  
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  width: calc(100% - 20px);
+  height: calc(30vh - 20px);
+  padding-left: 30px;
+  padding-right: 30px ;
+}
+
+@media (max-width: 480px) {
+  footer{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.footer-menu a{
+  text-decoration: none;
+  color: var(--secundary-color);
+}
+
+.footer-menu{
+    display: flex;
+    gap: 10px;
+}
+
+@media (max-width: 480px) {
+  .footer-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+}
+
+.icons-content{
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 480px) {
+  .icons-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+}
+
+.icons{
+    background-color: var(--main-color);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
